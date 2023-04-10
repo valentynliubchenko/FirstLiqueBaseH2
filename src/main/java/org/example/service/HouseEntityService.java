@@ -18,7 +18,7 @@ public class HouseEntityService {
 
     private HouseEntity createRecord (HouseDTO houseDTO) {
         return HouseEntity.builder().id(houseDTO.getId())
-                .numberOfFloors(houseDTO.getNumberOfFloors())
+                .newNumberOfFloors(houseDTO.getNumberOfFloors())
                 .numberOfShafts(houseDTO.getNumberOfShafts())
                 //.orderSequenceOfStops(houseDTO.getOrderSequenceOfStops().toString())
                 .build();

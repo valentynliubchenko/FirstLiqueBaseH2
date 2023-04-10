@@ -7,9 +7,6 @@ import lombok.NoArgsConstructor;
 import org.example.dto.HouseDTO;
 import org.example.dto.SequenceOfStops;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
 @Builder
 @Table(name = "house")
@@ -22,19 +19,19 @@ public class HouseEntity {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "NUMBER_OF_FLOORS")
-    private String numberOfFloors;
+    @Column(name = "NUMBEROFFLOORS")
+    private String newNumberOfFloors;
 
-    @Column(name = "NUMBER_OF_SHAFTS")
+    @Column(name = "NUMBEROFSHAFTS")
     private String numberOfShafts;
 
-    @Column(name = "order_Sequence_Of_Stops")
+    @Column(name = "ORDERSEQUENCEOFSTOPS")
     private String orderSequenceOfStops;
 
     public HouseDTO toDTO () {
         SequenceOfStops sequenceOfStops = new SequenceOfStops();
         return HouseDTO.builder().id(id)
-                .numberOfFloors(numberOfFloors)
+                .numberOfFloors(newNumberOfFloors)
                 .numberOfShafts(numberOfShafts)
                 //.orderSequenceOfStops(new ArrayList<>(List.of(sequenceOfStops)))
                 .build();

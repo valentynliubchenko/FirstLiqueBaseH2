@@ -14,19 +14,19 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: NUMBER_OF_FLOORS
+                  name: NUMBEROFFLOORS
                   type: INT
                   constraints:
                     unique: false
                     nullable: false
               - column:
-                  name: NUMBER_OF_SHAFTS
+                  name: NUMBEROFSHAFTS
                   type: INT
                   constraints:
                     unique: false
                     nullable: false
               - column:
-                  name: order_Sequence_Of_Stops
+                  name: ORDERSEQUENCEOFSTOPS
                   type: varchar(512)
                   constraints:
                     nullable: true
