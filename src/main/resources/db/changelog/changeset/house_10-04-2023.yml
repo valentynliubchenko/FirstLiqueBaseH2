@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: valentinl
+      changes:
+        - createTable:
+            tableName: house
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: NUMBER_OF_FLOORS
+                  type: INT
+                  constraints:
+                    unique: false
+                    nullable: false
+              - column:
+                  name: NUMBER_OF_SHAFTS
+                  type: INT
+                  constraints:
+                    unique: false
+                    nullable: false
+              - column:
+                  name: order_Sequence_Of_Stops
+                  type: varchar(512)
+                  constraints:
+                    nullable: true
