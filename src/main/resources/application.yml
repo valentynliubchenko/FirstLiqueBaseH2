@@ -7,10 +7,8 @@ spring:
     driverClassName: org.h2.Driver
   jpa:
     spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
-#  jpa:
-#    hibernate:
-#      ddl-auto: validate
-#    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
 
   h2:
     console:
